@@ -40,7 +40,7 @@ int main(int argc, char **argv) {
 	alt_setbits_word( ( virtual_base + ( ( uint32_t )( ALT_GPIO1_SWPORTA_DDR_ADDR ) & ( uint32_t )( HW_REGS_MASK ) ) ), USER_IO_DIR );
 	printf("led test\r\n");
 	printf("the led flash 2 times\r\n");
-	for(i=0;i<1;i++)
+	for(i=0;i<10;i++)
 	{
 		alt_setbits_word( ( virtual_base + ( ( uint32_t )( ALT_GPIO1_SWPORTA_DR_ADDR ) & ( uint32_t )( HW_REGS_MASK ) ) ), BIT_LED );
 		usleep(500*1000);

@@ -1,5 +1,6 @@
 #
 TARGET = hps_gpio
+IP_TARGET = 169.254.0.13
 ALT_DEVICE_FAMILY ?= soc_cv_av
 SOCEDS_ROOT ?= $(SOCEDS_DEST_ROOT)
 HWLIBS_ROOT = $(SOCEDS_ROOT)/ip/altera/hps/altera_hps/hwlib
@@ -12,7 +13,10 @@ ARCH= arm
 build: $(TARGET)
 
 deploy: $(TARGET)
-	scp $(TARGET) root@169.254.0.13:/home/root
+	scp $(TARGET) root@$(IP_TARGET):/home/root
+
+run: $(TARGET)
+	ssh root@$(IP_TARGET) /home/root/$(TARGET)
 
 $(TARGET): main.o 
 	$(CC) $(LDFLAGS)   $^ -o $@ 
