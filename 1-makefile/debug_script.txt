@@ -1,0 +1,3 @@
+gdb_arm (alias for $HOME/insper/soc/linaro/gcc-linaro-7.4.1-2019.02-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-gdb)
+file <program> (program = hps_gpio)
+target remote <ip-of-target>:10000 (ip = 169.254.0.13)
