@@ -1,0 +1,13 @@
+<h3>LED FPGA</h3>
+<div>
+    <form method="post" action="/toggle">
+        <input type="submit" value="On" name="action1"/>
+        <input type="submit" value="Off" name="action2"/>
+    </form>
+
+    <form method="get" action="/status">
+        <input type="submit" value="Status" name="action2" />
+        <p>But status: {{status}}</p>
+    </form>
+</div>
+

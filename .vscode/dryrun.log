@@ -1,0 +1,6 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/paulao/insper/soc/22b-soc-labs-pauloschade'
+make: Leaving directory '/home/paulao/insper/soc/22b-soc-labs-pauloschade'
+ 
+make: *** No targets specified and no makefile found.  Stop.
+

@@ -1,0 +1,1 @@
+scp hps_gpio2 root@169.254.0.13:/home/root

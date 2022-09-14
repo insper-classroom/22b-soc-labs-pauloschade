@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "hps.h": "c",
+        "alt_gpio.h": "c"
+    }
+}

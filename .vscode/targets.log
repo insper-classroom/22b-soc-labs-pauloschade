@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Wed Aug 31 18:41:06 2022
+# Make data base, printed on Mon Aug 29 18:36:56 2022
 
 # Variables
 
@@ -16,8 +16,6 @@ GNUMAKEFLAGS :=
 <D = $(patsubst %/,%,$(dir $<))
 # automatic
 ?F = $(notdir $?)
-# makefile (from 'Makefile', line 5)
-SOCEDS_ROOT = $(SOCEDS_DEST_ROOT)
 # environment
 DESKTOP_SESSION = ubuntu
 # default
@@ -30,8 +28,6 @@ VUNIT_SIMULATOR = modelsim
 SNAP_COMMON = /var/snap/code/common
 # environment
 XDG_SESSION_TYPE = x11
-# makefile (from 'Makefile', line 2)
-TARGET = hps_gpio
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # automatic
@@ -43,7 +39,7 @@ GDMSESSION = ubuntu
 # environment
 XMODIFIERS = @im=ibus
 # makefile
-CURDIR := /home/paulao/insper/soc/22b-soc-labs-pauloschade/1-makefile
+CURDIR := /home/paulao/insper/soc/22b-soc-labs-pauloschade
 # makefile
 SHELL = /bin/sh
 # environment
@@ -53,9 +49,7 @@ VTE_VERSION = 6003
 # environment
 VSCODE_NLS_CONFIG = {"locale":"pt-br","availableLanguages":{},"_languagePackSupport":true}
 # environment
-JOURNAL_STREAM = 8:54671
-# makefile (from 'Makefile', line 8)
-CFLAGS = -g -Wall   -D$(ALT_DEVICE_FAMILY) -I$(HWLIBS_ROOT)/include/$(ALT_DEVICE_FAMILY)   -I$(HWLIBS_ROOT)/include/
+JOURNAL_STREAM = 8:51807
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # environment
@@ -64,8 +58,8 @@ QSYS_ROOTDIR = /home/paulao/intelFPGA_lite/20.1/quartus/sopc_builder/bin
 SNAP_INSTANCE_NAME = code
 # environment
 SNAP_ARCH = amd64
-# makefile (from 'Makefile', line 1)
-MAKEFILE_LIST :=  Makefile
+# makefile
+MAKEFILE_LIST := 
 # automatic
 @F = $(notdir $@)
 # environment
@@ -77,23 +71,25 @@ XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/d
 # environment
 DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1002/bus
 # environment
-MANAGERPID = 1572
+MANAGERPID = 1963
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # environment
-VSCODE_CWD = /home/paulao/insper/soc/22b-soc-labs-pauloschade/1-makefile
+VSCODE_CWD = /home/paulao/insper/soc/22b-soc-labs-pauloschade
 # environment
 GSETTINGS_SCHEMA_DIR = /snap/code/105/usr/share/glib-2.0/schemas
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
-PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/paulao/intelFPGA_lite/20.1/quartus/bin:/home/paulao/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/:/home/paulao/intelFPGA_lite/20.1/modelsim_ase/lib32:/home/paulao/intelFPGA/18.1//embedded/:/home/paulao/intelFPGA/18.1//embedded/host_tools/altera/preloadergen/:/home/paulao/insper/soc/linaro/gcc-linaro-7.4.1-2019.02-x86_64_arm-linux-gnueabihf/bin
+PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/paulao/intelFPGA/18.1/quartus/bin:/home/paulao/intelFPGA/18.1/modelsim_ase/linuxaloem/:/home/paulao/intelFPGA/18.1/modelsim_ase/lib32:/home/paulao/intelFPGA_lite/20.1/quartus/bin:/home/paulao/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/:/home/paulao/intelFPGA_lite/20.1/modelsim_ase/lib32:/home/paulao/intelFPGA/18.1//embedded/:/home/paulao/intelFPGA/18.1//embedded/host_tools/altera/preloadergen/:/home/paulao/insper/soc/linaro/gcc-linaro-7.4.1-2019.02-x86_64_arm-linux-gnueabihf/bin
+# environment
+LM_LICENSE_FILE = 27001@3.83.118.16
 # environment
 GPG_AGENT_INFO = /run/user/1002/gnupg/S.gpg-agent:0:1
 # environment
 ARM_GCC = /home/paulao/insper/soc/linaro/gcc-linaro-7.4.1-2019.02-x86_64_arm-linux-gnueabihf
 # environment
-SESSION_MANAGER = local/labarqcomp-NUC8i5BEK:@/tmp/.ICE-unix/1796,unix/labarqcomp-NUC8i5BEK:/tmp/.ICE-unix/1796
+SESSION_MANAGER = local/labarqcomp-NUC8i5BEK:@/tmp/.ICE-unix/2177,unix/labarqcomp-NUC8i5BEK:/tmp/.ICE-unix/2177
 # environment
 XDG_RUNTIME_DIR = /run/user/1002
 # environment
@@ -109,9 +105,7 @@ DISABLE_WAYLAND = 1
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = 5d36a400ee4545e4876123c8407b9230
-# makefile (from 'Makefile', line 9)
-LDFLAGS = -g -Wall 
+INVOCATION_ID = a60c999d11aa4ff2902fd416db618f43
 # environment
 GDK_PIXBUF_MODULEDIR = /snap/code/105/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
 # default
@@ -129,15 +123,13 @@ DISPLAY = :0
 # environment
 SNAP_INSTANCE_KEY = 
 # environment
-PWD = /home/paulao/insper/soc/22b-soc-labs-pauloschade/1-makefile
-# makefile (from 'Makefile', line 4)
-ALT_DEVICE_FAMILY = soc_cv_av
+PWD = /home/paulao/insper/soc/22b-soc-labs-pauloschade
 # default
 .LOADED := 
 # environment
 SOCEDS_HWLIB = /home/paulao/intelFPGA/18.1//embedded/ip/altera/hps/altera_hps/hwlib/
 # environment
-SSH_AGENT_PID = 1757
+SSH_AGENT_PID = 2139
 # environment
 SOCEDS_DEST_ROOT = /home/paulao/intelFPGA/18.1//embedded
 # environment
@@ -148,8 +140,8 @@ GTK_MODULES = gail:atk-bridge
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
 HOME = /home/paulao
-# makefile (from 'Makefile', line 6)
-HWLIBS_ROOT = $(SOCEDS_ROOT)/ip/altera/hps/altera_hps/hwlib
+# environment
+LD_LIBRARY_PATH = :/home/paulao/intelFPGA/18.1/modelsim_ase/lib32
 # environment
 LESSCLOSE = /usr/bin/lesspipe %s %s
 # environment
@@ -192,12 +184,8 @@ QT_IM_MODULE = ibus
 SNAP_USER_DATA = /home/paulao/snap/code/105
 # environment
 SHLVL = 1
-# makefile (from 'Makefile', line 10)
-CC = $(CROSS_COMPILE)gcc
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
-# makefile (from 'Makefile', line 3)
-IP_TARGET = 169.254.0.13
 # default
 MAKE_VERSION := 4.2.1
 # environment
@@ -205,7 +193,7 @@ USER = paulao
 # environment
 SNAP_REVISION = 105
 # makefile
-.DEFAULT_GOAL := build
+.DEFAULT_GOAL := 
 # environment
 VUNIT_MODELSIM_PATH = /home/paulao/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/
 # environment
@@ -215,7 +203,7 @@ XDG_CURRENT_DESKTOP = Unity
 # default
 MAKE_COMMAND := make
 # environment
-OLDPWD = /home/paulao/insper/soc/22b-soc-labs-pauloschade
+OLDPWD = /home/paulao/insper/soc
 # default
 .VARIABLES := 
 # automatic
@@ -224,8 +212,6 @@ OLDPWD = /home/paulao/insper/soc/22b-soc-labs-pauloschade
 LANGUAGE = pt_BR:pt:en
 # environment
 VSCODE_IPC_HOOK = /run/user/1002/vscode-4c3220af-1.70.2-main.sock
-# makefile (from 'Makefile', line 11)
-ARCH = arm
 # makefile
 MAKEFLAGS = pqrR
 # environment
@@ -239,13 +225,11 @@ GDK_BACKEND = x11
 # automatic
 +F = $(notdir $+)
 # environment
-NO_AT_BRIDGE = 1
-# environment
 QT_ACCESSIBILITY = 1
 # environment
 GCC_Linaro = /home/paulao/insper/soc/linaro/gcc-linaro-7.4.1-2019.02-x86_64_arm-linux-gnueabihf/bin
-# makefile (from 'Makefile', line 7)
-CROSS_COMPILE = arm-linux-gnueabihf-
+# environment
+CROSS_COMPILE = /home/paulao/insper/soc/linaro/gcc-linaro-7.4.1-2019.02-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-
 # default
 MAKEFILES := 
 # environment
@@ -257,11 +241,11 @@ SNAP_NAME = code
 # environment
 LC_ALL = C
 # environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/b5abd0bc_6e36_4d5a_874b_404fbcdb8534
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/1c34c304_8268_433c_985f_f1ea46136640
 # automatic
 ^F = $(notdir $^)
 # environment
-GNOME_TERMINAL_SERVICE = :1.83
+GNOME_TERMINAL_SERVICE = :1.203
 # default
 SUFFIXES := 
 # environment
@@ -278,13 +262,10 @@ WINDOWPATH = 2
 LANG = C
 # environment
 TERM = xterm-256color
- 
-make: *** No rule to make target 'all'.  Stop.
-
 # environment
-VSCODE_PID = 46567
+VSCODE_PID = 52668
 # variable set hash-table stats:
-# Load=135/1024=13%, Rehash=0, Collisions=15/167=9%
+# Load=127/1024=12%, Rehash=0, Collisions=15/149=10%
 
 # Pattern-specific Variable Values
 
@@ -292,26 +273,18 @@ VSCODE_PID = 46567
 
 # Directories
 
-# . (device 2052, inode 7871573): 9 files, no impossibilities.
+# . (device 2052, inode 7475772): 5 files, no impossibilities.
 
-# 9 files, no impossibilities in 1 directories.
+# 5 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
-%.o: %.c
-#  recipe to execute (from 'Makefile', line 25):
-	$(CC) $(CFLAGS) -c $< -o $@
+# No implicit rules.
+ 
+make: *** No rule to make target 'all'.  Stop.
 
-# 1 implicit rules, 0 (0.0%) terminal.
 
 # Files
-
-hps_gpio: main.o
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 22):
-	$(CC) $(LDFLAGS)   $^ -o $@ 
 
 # Not a target:
 all:
@@ -320,22 +293,19 @@ all:
 #  File does not exist.
 #  File has not been updated.
 
-.PHONY: clean
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-08-22 20:27:44.753549364
+#  File does not exist.
 #  File has been updated.
-#  Successfully updated.
+#  Failed to be updated.
 
-build: hps_gpio
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+# Not a target:
+makefile:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
 
 # Not a target:
 .DEFAULT:
@@ -343,48 +313,27 @@ build: hps_gpio
 #  Modification time never checked.
 #  File has not been updated.
 
-run: hps_gpio
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 19):
-	ssh root@$(IP_TARGET) /home/root/$(TARGET)
-
-clean:
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 29):
-	rm -f $(TARGET) *.a *.o *~
-
 # Not a target:
-main.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-deploy: hps_gpio
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 16):
-	scp $(TARGET) root@$(IP_TARGET):/home/root
+GNUmakefile:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
 
 # files hash-table stats:
-# Load=11/1024=1%, Rehash=0, Collisions=0/28=0%
+# Load=6/1024=1%, Rehash=0, Collisions=0/15=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 23 / storage = 213 B / avg = 9 B
-# current buf: size = 8162 B / used = 213 B / count = 23 / avg = 9 B
+# strcache buffers: 1 (0) / strings = 13 / storage = 114 B / avg = 8 B
+# current buf: size = 8162 B / used = 114 B / count = 13 / avg = 8 B
 
-# strcache performance: lookups = 37 / hit rate = 37%
+# strcache performance: lookups = 16 / hit rate = 18%
 # hash-table stats:
-# Load=23/8192=0%, Rehash=0, Collisions=1/37=3%
-# Finished Make data base on Wed Aug 31 18:41:06 2022
+# Load=13/8192=0%, Rehash=0, Collisions=2/16=12%
+# Finished Make data base on Mon Aug 29 18:36:56 2022
 
  

@@ -1,5 +1,6 @@
-make --dry-run --keep-going --print-directory
+make --dry-run --always-make --keep-going --print-directory
 make: Entering directory '/home/paulao/insper/soc/22b-soc-labs-pauloschade/1-makefile'
-make: Nothing to be done for 'build'.
+arm-linux-gnueabihf-gcc -g -Wall   -Dsoc_cv_av -I/home/paulao/intelFPGA/18.1//embedded/ip/altera/hps/altera_hps/hwlib/include/soc_cv_av   -I/home/paulao/intelFPGA/18.1//embedded/ip/altera/hps/altera_hps/hwlib/include/ -c main.c -o main.o
+arm-linux-gnueabihf-gcc -g -Wall    main.o -o hps_gpio 
 make: Leaving directory '/home/paulao/insper/soc/22b-soc-labs-pauloschade/1-makefile'
  
