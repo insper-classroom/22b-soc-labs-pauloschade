@@ -47,10 +47,11 @@ int main(int argc, char *argv[]) {
     printf("connecting \n");
     LCD_CANVAS LcdCanvas;
     int sock = 0, connfd = 0;
-    int fd, st;
+    int fd, st, write_oled_flag;
     char sendBuff[1025];
 	char recvBuff[1025];
 
+    write_oled_flag = 0;
 
     if( ( fd = open( "/dev/mem", ( O_RDWR | O_SYNC ) ) ) == -1 ) {
 		printf( "ERROR: could not open \"/dev/mem\"...\n" );
@@ -80,11 +81,10 @@ int main(int argc, char *argv[]) {
         // clear screen
         DRAW_Clear(&LcdCanvas, LCD_WHITE);
 
-        DRAW_PrintString(&LcdCanvas, 40, 5, "Hello", LCD_BLACK, &font_16x16);
+        DRAW_PrintString(&LcdCanvas, 40, 5, "Paulo", LCD_BLACK, &font_16x16);
         DRAW_PrintString(&LcdCanvas, 40, 5+16, "SoCFPGA", LCD_BLACK, &font_16x16);
-        DRAW_PrintString(&LcdCanvas, 40, 5+32, "Terasic ", LCD_BLACK, &font_16x16);
+        DRAW_PrintString(&LcdCanvas, 40, 5+32, "atv2 ", LCD_BLACK, &font_16x16);
         DRAW_Refresh(&LcdCanvas);
-        free(LcdCanvas.pFrame);
     }
 
 	memset(sendBuff, '0', sizeof(sendBuff));
@@ -118,6 +118,15 @@ int main(int argc, char *argv[]) {
         if (n > 0) {
             recvBuff[n-1] = '\0';
 
+            if(write_oled_flag) {
+                printf("writting to OLED\n");
+                DRAW_Clear(&LcdCanvas, LCD_WHITE);
+                DRAW_PrintString(&LcdCanvas, 40, 5+16, recvBuff, LCD_BLACK, &font_16x16);
+                DRAW_Refresh(&LcdCanvas);
+                write_oled_flag = 0;
+                continue;
+            }
+
             if(!strcmp(recvBuff, "on")) {
                 printf("turning led on\n");
                 led_on();
@@ -130,10 +139,10 @@ int main(int argc, char *argv[]) {
                 sprintf(str, "%d", st);
                 write(connfd, str, strlen(str));
             } else if (!strcmp(recvBuff, "write")) {
-                char str[10];
-                st = status();
-                sprintf(str, "%d", st);
-                write(connfd, str, strlen(str));
+                printf("sending confirmation to write content to oled\n");
+                snprintf(sendBuff, sizeof(sendBuff), "ok");
+                write(connfd, sendBuff, strlen(sendBuff));
+                write_oled_flag = 1;
             }
         }
 

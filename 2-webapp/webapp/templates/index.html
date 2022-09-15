@@ -9,5 +9,12 @@
         <input type="submit" value="Status" name="action2" />
         <p>But status: {{status}}</p>
     </form>
+
+    <form method="post" action="/write">
+        <label for="oled">Last Name:</label>
+        <input type="text" id="oled" name="content" placeholder="oled">
+        <button type="submit">write</button>
+        <div>{{oled_content}}</div>
+    </form>
 </div>
 

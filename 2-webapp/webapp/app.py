@@ -46,7 +46,18 @@ def status():
         btn_status = "not pressed"
     return render_template("index.html", status = btn_status)
 
+@app.route('/write', methods=['POST'])
+def write():
+    sock.send("write")
+    response = sock.receive()
+    print(response)
+    if response != "ok":
+        return "ERROR"
+    content = request.form.get("content")
+    sock.send(content)
+    return render_template("index.html", oled_content = content + " written to oled!")
+
 if __name__ == '__main__':
     sock.connect()
     #app.run(host='0.0.0.0')
-    app.run(host='169.254.0.13')
+    app.run(host='169.254.0.13', port=10000)
